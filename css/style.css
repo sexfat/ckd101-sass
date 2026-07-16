@@ -21,8 +21,11 @@ h1 {
   width: 100%;
 }
 
-span {
-  color: #333;
+.scope {
+  font-size: 20px;
+}
+
+.scope-inner {
   font-size: 20px;
 }
 

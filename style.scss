@@ -48,7 +48,26 @@ $w : null;
 } 
 
 
-span {
-   color : #333;
-   font-size: 20px;
+// span {
+//    color : #333; //可以給null值
+//    font-size: 20px;
+// }
+
+
+// 全域變數跟區域變數的設定
+$scope-a : 30px;
+
+.scope {
+   $scope-b : 20px !global; //提升為全域變數
+   font-size: $scope-b;
 }
+
+
+.scope-inner {
+  font-size: $scope-b;
+}
+
+
+
+
+
