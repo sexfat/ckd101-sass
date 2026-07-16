@@ -26,9 +26,7 @@ body {
 }
 
 .btn {
- background-color: map-get($btnColor, primary);
-
-
+ background-color: map-get($btnColor, secondary);
 
 }
 
@@ -37,8 +35,20 @@ h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+$w : null;
+
 .wrapper {
-  margin: $center;
-
-
+  @if $w {
+     width: $w;
+     margin: $center;
+  }@else {
+     width: 100%;
+  } 
 } 
+
+
+span {
+   color : #333;
+   font-size: 20px;
+}

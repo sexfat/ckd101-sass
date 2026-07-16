@@ -9,7 +9,7 @@ body {
 }
 
 .btn {
-  background-color: blue;
+  background-color: yellow;
 }
 
 h1 {
@@ -18,7 +18,12 @@ h1 {
 }
 
 .wrapper {
-  margin: 10px auto;
+  width: 100%;
+}
+
+span {
+  color: #333;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
