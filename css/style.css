@@ -66,5 +66,8 @@ h1 {
 .header nav ul li:hover {
   background-color: #0099b4;
 }
+.header nav ul li.active {
+  background-color: #0099b4;
+}
 
 /*# sourceMappingURL=style.css.map */
