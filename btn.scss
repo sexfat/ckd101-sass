@@ -1,8 +1,9 @@
-$space : 10px;
-$bgc : rgb(255, 102, 0);
+$space : 20px;
+$bgc : #15803D;
 $color : #333;
 $border : 1px solid #333;
 $boderR : 5px; 
+$fontSizeBasic: 20px;
 
 
 .btn {
@@ -12,4 +13,5 @@ $boderR : 5px;
  text-align: center;
  border: 1px solid $color;
  border-radius: 5px;
+ font-size: $fontSizeBasic;
 }
