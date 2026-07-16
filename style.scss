@@ -1,20 +1,7 @@
 /*css 註解*/
 // sass 註解 
 
-
-// var 宣告
-$fontSizeBasic : 16px;
-$mainTitle : 40px; // 數值
-$fontcolor : #333; // color 
-$center : 10px auto; // list
-$btnColor : (key : val,
-    primary : blue,
-    secondary : yellow,
-    error : red,
-); // map
-
-
-
+@use 'var' as *;
 
 body {
     margin: 0;
