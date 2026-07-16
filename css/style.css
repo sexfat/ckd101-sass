@@ -29,4 +29,20 @@ h1 {
   font-size: 20px;
 }
 
+.lane {
+  background-color: #e7ff7a;
+}
+
+.class {
+  width: 10px;
+}
+
+.box {
+  background-image: url(./images/img.jpg);
+}
+
+.attr {
+  margin: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */

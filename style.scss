@@ -68,6 +68,31 @@ $scope-a : 30px;
 }
 
 
+//設定預設值
+$bgc : #e7ff7a; // 1
+$bgc : rgb(43, 255, 24) !default; 
 
+
+
+.lane {
+   background-color: $bgc;
+}
+
+// #{ } 稱為 插值（Interpolation），可把 Sass 的值插入到選擇器、屬性名、字串中。
+
+$name : class;
+$link : img;
+$prop : margin;
+
+
+
+// 1) class 名稱
+.#{$name} { width: 10px; }
+
+// 2) url 路徑
+.box { background-image: url(./images/#{$link}.jpg); }
+
+// 3) 屬性名稱
+.attr { #{$prop}: 10px; }
 
 
