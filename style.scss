@@ -1,6 +1,30 @@
+/*css 註解*/
+// sass 註解 
+
+
+// var 宣告
+$fontSizeBasic : 16px;
+$mainTitle : 40px; // 數值
+$fontcolor : #333;// color 
+$center : 10px auto;
+
+
+
 body {
  margin: 0;
  padding: 0;
- font-size: 20px;
- color: #333;
+ font-size: $fontSizeBasic;
+ color: $fontcolor;
+ background-color: rgb(156, 231, 224);
 }
+
+h1 {
+  font-size: $mainTitle;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+  margin: $center;
+
+
+} 

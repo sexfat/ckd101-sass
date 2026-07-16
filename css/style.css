@@ -1,8 +1,20 @@
+@charset "UTF-8";
+/*css 註解*/
 body {
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 16px;
   color: #333;
+  background-color: rgb(156, 231, 224);
+}
+
+h1 {
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+  margin: 10px auto;
 }
 
 /*# sourceMappingURL=style.css.map */
