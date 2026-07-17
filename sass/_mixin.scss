@@ -92,3 +92,21 @@
         @content; 
     }
 }
+
+
+// 微調元件 使用
+
+@mixin push($var) {
+    @for $i from 1 through $var {
+        .push-left-#{$i} {
+            position: relative;
+            left: $i * 1px;
+        }
+
+        .push-top-#{$i} {
+            position: relative;
+            top: $i * 1px;
+        }
+    }
+
+}

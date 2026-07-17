@@ -11,6 +11,7 @@
 
 //component
 @use 'component/btn';
+@use 'component/push';
 
 
 // layout
@@ -25,31 +26,29 @@
 @use 'page/about';
 @use 'page/product';
 
-
+//運算
 
 .a {
-   width:  10em + 10em;
-   height:  20 - 30 + px;
-   margin:  10px * 10;
-   font : math.div(100 , 20) + px;//要記得引用@use 'sass:math';
-
+    width: 10em + 10em;
+    height: 20 - 30 + px;
+    margin: 10px * 10;
+    font: math.div(100, 20) + px; //要記得引用@use 'sass:math';
 
 }
 
 
 
+@mixin bgImage($img ,$url:'./images') {
+    @each $i in $img {
+        .bg-#{$i} {
+            background-image: url('#{$url}/#{$i}.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            min-height: 450px;
+        }
+    }
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+@include bgImage(full-1 full-2 full-3 sectionBg , './assets/img')
