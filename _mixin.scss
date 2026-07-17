@@ -13,45 +13,86 @@
 }
 
 //  layout
-@mixin center($w , $top , $borderColor) {
+@mixin center($w , $top , $border:null) {
     margin: $top auto 0;
     width: $w;
-    border: 1px solid $borderColor
+    border: $border
 }
 
 
 // btn 
-@mixin btn($bgc , $color ,$outline:false) {
+// =================================================
+//  使用方式 @include btn(background-color , font color , Outline button)
+//==================================================
+@mixin btn($bgc , $color , $outline: false) {
     padding: 10px 30px;
     text-align: center;
+    display: inline;
+
     @if $outline {
-      border: 2px solid $bgc;
-      color:  $bgc;
-    }@else {
+        border: 2px solid $bgc;
+        color: $bgc;
+
+        &:hover {
+            background-color: darken($bgc , 10);
+            color: $color;
+        }
+    }
+
+    @else {
         background-color: $bgc;
         color: $color;
+
+        &:hover {
+            background-color: darken($bgc , 10);
+        }
     }
+
     border-radius: 4px;
     cursor: pointer;
     transition: .3s all ease;
-    &:hover {
-       background-color: darken($bgc , 10);   
-    }
+
 }
 
 .btn-error {
-    @include btn(#ff0000 , #ffffff);
+    @include btn(#ff0000, #ffffff);
 }
 
 .btn-default {
-   @include btn(#003cff , #fff ,true)
+    @include btn(#003cff, #fff, true)
 }
 
 .btn-secondary {
-
-  @include btn(#22ff00, #fcfcfc);
+    @include btn(#8cff00, #fcfcfc);
 
 }
+.btn-success {
+    @include btn(#ffb700, #fcfcfc);
+}
+
+
+@mixin layout($w){
+   .wrapper {
+     @if $w == 100 {
+      width: 100%;
+     }@else if $w < 100 {
+        width: $w * 1%;
+        margin: auto; 
+     }
+     @else {
+       @include center($w , 0)
+     }
+   }
+}
+
+
+
+@include layout(1366px);
+
+
+
+
+
 
 
 

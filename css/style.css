@@ -3,52 +3,83 @@
 .btn-error {
   padding: 10px 30px;
   text-align: center;
+  display: inline;
   background-color: #ff0000;
   color: #ffffff;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.3s all ease;
 }
 .btn-error:hover {
   background-color: #cc0000;
+}
+.btn-error {
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s all ease;
 }
 
 .btn-default {
   padding: 10px 30px;
   text-align: center;
+  display: inline;
   border: 2px solid #003cff;
   color: #003cff;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.3s all ease;
 }
 .btn-default:hover {
   background-color: #0030cc;
+  color: #fff;
+}
+.btn-default {
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s all ease;
 }
 
 .btn-secondary {
   padding: 10px 30px;
   text-align: center;
-  background-color: #22ff00;
+  display: inline;
+  background-color: #8cff00;
   color: #fcfcfc;
+}
+.btn-secondary:hover {
+  background-color: #70cc00;
+}
+.btn-secondary {
   border-radius: 4px;
   cursor: pointer;
   transition: 0.3s all ease;
 }
-.btn-secondary:hover {
-  background-color: rgb(27.2, 204, 0);
+
+.btn-success {
+  padding: 10px 30px;
+  text-align: center;
+  display: inline;
+  background-color: #ffb700;
+  color: #fcfcfc;
+}
+.btn-success:hover {
+  background-color: rgb(204, 146.4, 0);
+}
+.btn-success {
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.wrapper {
+  margin: 0 auto 0;
+  width: 1366px;
 }
 
 .box1 {
   margin: 10px auto 0;
   width: 300px;
-  border: 1px solid #ff1f1f;
+  border: #ff1f1f;
 }
 
 .box2 {
   margin: 20px auto 0;
   width: 400px;
-  border: 1px solid #ffc904;
+  border: #ffc904;
 }
 
 h1 {
