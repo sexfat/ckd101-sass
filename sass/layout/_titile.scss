@@ -6,12 +6,12 @@ h1 {
 
     @include boldfont(50px);
 
-    @include t() {
+    @include t{
         @include boldfont(80px);
         color: #ff0000
     }
 
-    @include m() {
+    @include m {
         @include boldfont(100px);
         color: #000;
     }

@@ -78,14 +78,14 @@
 }
 
 
-@mixin m() {
+@mixin m {
     @media screen and (max-width : $m) {
         // content  手機
         @content;
     }
 }
 
-@mixin t() {
+@mixin t {
     @media screen and (max-width : $t) {
         // content 桌機
         @content; 
