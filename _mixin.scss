@@ -1,13 +1,79 @@
-@mixin basicfontsize(){
-  font-size: 16px;
-  font-weight: 900;
+// font mixin
+
+@mixin basicfontsize {
+    font-size: 16px;
+    font-weight: 900;
+    color: #333;
+}
+
+@mixin boldfont($var) {
+    font-weight: bold;
+    font-size: $var;
+    color: #999;
+}
+
+//  layout
+@mixin center($w , $top , $borderColor) {
+    margin: $top auto 0;
+    width: $w;
+    border: 1px solid $borderColor
 }
 
 
+// btn 
+@mixin btn($bgc , $color) {
+    padding: 10px 30px;
+    text-align: center;
+    color: $color;
+    background-color: $bgc;
+    border: #999;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s all ease;
+    &:hover {
+       background-color: darken($bgc , 10);   
+    }
+}
+
+.btn-error {
+    @include btn(#ff0000 , #ffffff);
+}
+
+.btn-default {
+   @include btn(#003cff , #fff)
+}
+
+.btn-secondary {
+
+  @include btn(#22ff00, #fcfcfc);
+
+}
+
+
+
+.box1 {
+    @include center(300px, 10px, #ff1f1f);
+}
+
+
+.box2 {
+    @include center(400px, 20px, #ffc904)
+}
+
+h1 {
+    @include boldfont(50px);
+}
+
+h2 {
+    @include boldfont(40px);
+}
+
+// mixin
+
 a {
-  @include basicfontsize()
+    @include basicfontsize
 }
 
 div {
-  @include basicfontsize()
+    @include basicfontsize
 }

@@ -1,13 +1,81 @@
 @charset "UTF-8";
 /*css 註解*/
+.btn-error {
+  padding: 10px 30px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff0000;
+  border: #999;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.btn-error:hover {
+  background-color: #cc0000;
+}
+
+.btn-default {
+  padding: 10px 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #003cff;
+  border: #999;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.btn-default:hover {
+  background-color: #0030cc;
+}
+
+.btn-secondary {
+  padding: 10px 30px;
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #22ff00;
+  border: #999;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.btn-secondary:hover {
+  background-color: rgb(27.2, 204, 0);
+}
+
+.box1 {
+  margin: 10px auto 0;
+  width: 300px;
+  border: 1px solid #ff1f1f;
+}
+
+.box2 {
+  margin: 20px auto 0;
+  width: 400px;
+  border: 1px solid #ffc904;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  color: #999;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #999;
+}
+
 a {
   font-size: 16px;
   font-weight: 900;
+  color: #333;
 }
 
 div {
   font-size: 16px;
   font-weight: 900;
+  color: #333;
 }
 
 body {
