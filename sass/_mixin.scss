@@ -110,3 +110,17 @@
     }
 
 }
+
+
+// each list
+@mixin bgImage($img ,$url:'./images') {
+    @each $i in $img {
+        .bg-#{$i} {
+            background-image: url('#{$url}/#{$i}.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            min-height: 450px;
+        }
+    }
+}
