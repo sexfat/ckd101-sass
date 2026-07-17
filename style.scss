@@ -2,7 +2,7 @@
 // sass 註解 
 
 @use 'var';
-@use 'mixin';
+@use 'mixin' as *;
 // @import 'var';
 
 
@@ -17,6 +17,50 @@ h1 {
 
 span {
   font-size: var.$fontSizeBasic;
+}
+
+
+
+// btn 
+
+.btn-error {
+    @include btn(#ff0000, #ffffff);
+}
+
+.btn-default {
+    @include btn(#003cff, #fff, true)
+}
+
+.btn-secondary {
+    @include btn(#8cff00, #fcfcfc);
+
+}
+
+.btn-success {
+    @include btn(#ffb700, #fcfcfc);
+}
+
+
+header {
+    @include layout(1366px);
+    background-color: #f5fec5;
+}
+
+section {
+    @include layout(100);
+    background-color: #facece;
+}
+
+
+
+// title 
+
+h1 {
+    @include boldfont(50px);
+}
+
+h2 {
+    @include boldfont(40px);
 }
 
 

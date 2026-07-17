@@ -1,5 +1,17 @@
 @charset "UTF-8";
 /*css 註解*/
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+span {
+  font-size: 16px;
+}
+
 .btn-error {
   padding: 10px 30px;
   text-align: center;
@@ -77,18 +89,6 @@ section {
   background-color: #facece;
 }
 
-.box1 {
-  margin: 10px auto 0;
-  width: 300px;
-  border: #ff1f1f;
-}
-
-.box2 {
-  margin: 20px auto 0;
-  width: 400px;
-  border: #ffc904;
-}
-
 h1 {
   font-weight: bold;
   font-size: 50px;
@@ -99,30 +99,6 @@ h2 {
   font-weight: bold;
   font-size: 40px;
   color: #999;
-}
-
-a {
-  font-size: 16px;
-  font-weight: 900;
-  color: #333;
-}
-
-div {
-  font-size: 16px;
-  font-weight: 900;
-  color: #333;
-}
-
-body {
-  font-size: 16px;
-}
-
-h1 {
-  font-size: 80px;
-}
-
-span {
-  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

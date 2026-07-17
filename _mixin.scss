@@ -54,22 +54,7 @@
 
 }
 
-.btn-error {
-    @include btn(#ff0000, #ffffff);
-}
 
-.btn-default {
-    @include btn(#003cff, #fff, true)
-}
-
-.btn-secondary {
-    @include btn(#8cff00, #fcfcfc);
-
-}
-
-.btn-success {
-    @include btn(#ffb700, #fcfcfc);
-}
 
 
 @mixin layout($w) {
@@ -91,46 +76,3 @@
     }
 }
 
-
-header {
-    @include layout(1366px);
-    background-color: #f5fec5;
-}
-
-section {
-    @include layout(100);
-    background-color: #facece;
-}
-
-
-
-
-
-
-
-.box1 {
-    @include center(300px, 10px, #ff1f1f);
-}
-
-
-.box2 {
-    @include center(400px, 20px, #ffc904)
-}
-
-h1 {
-    @include boldfont(50px);
-}
-
-h2 {
-    @include boldfont(40px);
-}
-
-// mixin
-
-a {
-    @include basicfontsize
-}
-
-div {
-    @include basicfontsize
-}
