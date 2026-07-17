@@ -1,0 +1,9 @@
+header {
+    @include layout(1366px);
+    background-color: #f5fec5;
+}
+
+section {
+    @include layout(100);
+    background-color: #facece;
+}

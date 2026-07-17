@@ -1,0 +1,19 @@
+
+// btn 
+
+.btn-error {
+    @include btn(#ff0000, #ffffff);
+}
+
+.btn-default {
+    @include btn(#003cff, #fff, true)
+}
+
+.btn-secondary {
+    @include btn(#8cff00, #fcfcfc);
+
+}
+
+.btn-success {
+    @include btn(#ffb700, #fcfcfc);
+}

@@ -1,0 +1,42 @@
+/*css 註解*/
+// sass 註解 
+
+//basic
+@use 'var';
+@use 'mixin' as *;
+// @import 'var';
+
+
+//component
+@use 'component/btn';
+
+
+// layout
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/titile';
+
+
+// page 
+
+@use 'page/index';
+@use 'page/about';
+@use 'page/product';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

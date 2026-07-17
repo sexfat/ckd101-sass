@@ -1,0 +1,9 @@
+// title
+
+h1 {
+    @include boldfont(50px);
+}
+
+h2 {
+    @include boldfont(40px);
+}
