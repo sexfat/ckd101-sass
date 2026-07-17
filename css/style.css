@@ -65,9 +65,16 @@
   transition: 0.3s all ease;
 }
 
-.wrapper {
+header {
   margin: 0 auto 0;
-  width: 1366px;
+  width: 100%;
+  max-width: 1366px;
+  background-color: #f5fec5;
+}
+
+section {
+  width: 100%;
+  background-color: #facece;
 }
 
 .box1 {

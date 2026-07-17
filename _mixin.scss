@@ -13,7 +13,7 @@
 }
 
 //  layout
-@mixin center($w , $top , $border:null) {
+@mixin center($w , $top , $border: null) {
     margin: $top auto 0;
     width: $w;
     border: $border
@@ -66,29 +66,41 @@
     @include btn(#8cff00, #fcfcfc);
 
 }
+
 .btn-success {
     @include btn(#ffb700, #fcfcfc);
 }
 
 
-@mixin layout($w){
-   .wrapper {
-     @if $w == 100 {
-      width: 100%;
-     }@else if $w < 100 {
+@mixin layout($w) {
+
+
+    @if $w ==100 {
+        width: 100%;
+    }
+
+    @else if $w < 100 {
         width: $w * 1%;
-        margin: auto; 
-     }
-     @else {
-       @include center($w , 0)
-     }
-   }
+        margin: auto;
+    }
+
+    @else {
+        @include center(100%, 0);
+        max-width: $w;
+
+    }
 }
 
 
+header {
+    @include layout(1366px);
+    background-color: #f5fec5;
+}
 
-@include layout(1366px);
-
+section {
+    @include layout(100);
+    background-color: #facece;
+}
 
 
 
