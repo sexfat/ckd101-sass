@@ -310,39 +310,4 @@ h2 {
   height: 100px;
 }
 
-h1 {
-  font-size: 56px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h2 {
-  font-size: 48px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h3 {
-  font-size: 36px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h4 {
-  font-size: 28px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-span {
-  font-size: 12px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-div {
-  font-size: 18px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.bold {
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /*# sourceMappingURL=style.css.map */

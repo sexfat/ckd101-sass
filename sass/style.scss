@@ -48,23 +48,9 @@
 }
 
 
-$font : (
- h1 : 56px,
- h2 : 48px,
- h3 : 36px,
- h4 : 28px,
- span : 12px,
- div : 18px,
- '.bold'  : 20px 
-);
 
-@each $k , $v in $font {
-    #{$k} {
-        font-size: $v;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
 
-}
+
 
 
 
