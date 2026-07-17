@@ -21,11 +21,16 @@
 
 
 // btn 
-@mixin btn($bgc , $color) {
+@mixin btn($bgc , $color ,$outline:false) {
     padding: 10px 30px;
     text-align: center;
-    color: $color;
-    background-color: $bgc;
+    @if $outline {
+      border: 2px solid $bgc;
+      color:  $bgc;
+    }@else {
+        background-color: $bgc;
+        color: $color;
+    }
     border-radius: 4px;
     cursor: pointer;
     transition: .3s all ease;
@@ -39,7 +44,7 @@
 }
 
 .btn-default {
-   @include btn(#003cff , #fff)
+   @include btn(#003cff , #fff ,true)
 }
 
 .btn-secondary {
