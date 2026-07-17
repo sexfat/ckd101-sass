@@ -1,6 +1,15 @@
+@use '../mixin' as *;
+
 header {
     @include layout(1366px);
     background-color: #f5fec5;
+    h1 {
+      @include m(){
+       font-size: 30px;
+       color : #4800ff
+      }
+
+    }
 }
 
 section {

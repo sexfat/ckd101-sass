@@ -1,19 +1,23 @@
 
-// btn 
+@use '../var.figma' as *;
+@use '../var' as *;
+@use '../mixin' as *;
+
+// btn
 
 .btn-error {
-    @include btn(#ff0000, #ffffff);
+    @include btn(map-get($color-error, 500), $color-white);
 }
 
 .btn-default {
-    @include btn(#003cff, #fff, true)
+    @include btn(map-get($color-primary, 500), $color-white, true)
 }
 
 .btn-secondary {
-    @include btn(#8cff00, #fcfcfc);
+    @include btn(map-get($color-secondary, 500), $color-white);
 
 }
 
 .btn-success {
-    @include btn(#ffb700, #fcfcfc);
+    @include btn(map-get($color-success, 500), $color-white);
 }

@@ -1,9 +1,24 @@
 // title
+@use '../mixin' as *;
+
 
 h1 {
+
     @include boldfont(50px);
+
+    @include t() {
+        @include boldfont(80px);
+        color: #ff0000
+    }
+
+    @include m() {
+        @include boldfont(100px);
+        color: #000;
+    }
 }
 
 h2 {
     @include boldfont(40px);
 }
+
+

@@ -1,26 +1,14 @@
 @charset "UTF-8";
 /*css 註解*/
-body {
-  font-size: 16px;
-}
-
-h1 {
-  font-size: 80px;
-}
-
-span {
-  font-size: 16px;
-}
-
 .btn-error {
   padding: 10px 30px;
   text-align: center;
   display: inline;
-  background-color: #ff0000;
-  color: #ffffff;
+  background-color: #EF4444;
+  color: #FFFFFF;
 }
 .btn-error:hover {
-  background-color: #cc0000;
+  background-color: rgb(234.9802955665, 21.0197044335, 21.0197044335);
 }
 .btn-error {
   border-radius: 4px;
@@ -32,12 +20,12 @@ span {
   padding: 10px 30px;
   text-align: center;
   display: inline;
-  border: 2px solid #003cff;
-  color: #003cff;
+  border: 2px solid #4B4EFC;
+  color: #4B4EFC;
 }
 .btn-default:hover {
-  background-color: #0030cc;
-  color: #fff;
+  background-color: rgb(24.8360655738, 28.6721311475, 251.1639344262);
+  color: #FFFFFF;
 }
 .btn-default {
   border-radius: 4px;
@@ -49,11 +37,11 @@ span {
   padding: 10px 30px;
   text-align: center;
   display: inline;
-  background-color: #8cff00;
-  color: #fcfcfc;
+  background-color: #FC4BDC;
+  color: #FFFFFF;
 }
 .btn-secondary:hover {
-  background-color: #70cc00;
+  background-color: rgb(251.1639344262, 24.8360655738, 210.2459016393);
 }
 .btn-secondary {
   border-radius: 4px;
@@ -65,11 +53,11 @@ span {
   padding: 10px 30px;
   text-align: center;
   display: inline;
-  background-color: #ffb700;
-  color: #fcfcfc;
+  background-color: #22C55E;
+  color: #FFFFFF;
 }
 .btn-success:hover {
-  background-color: rgb(204, 146.4, 0);
+  background-color: rgb(26.4935064935, 153.5064935065, 73.2467532468);
 }
 .btn-success {
   border-radius: 4px;
@@ -83,6 +71,12 @@ header {
   max-width: 1366px;
   background-color: #f5fec5;
 }
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 30px;
+    color: #4800ff;
+  }
+}
 
 section {
   width: 100%;
@@ -93,6 +87,22 @@ h1 {
   font-weight: bold;
   font-size: 50px;
   color: #999;
+}
+@media screen and (max-width: 996px) {
+  h1 {
+    font-weight: bold;
+    font-size: 80px;
+    color: #999;
+    color: #ff0000;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-weight: bold;
+    font-size: 100px;
+    color: #999;
+    color: #000;
+  }
 }
 
 h2 {
