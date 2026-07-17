@@ -1,5 +1,6 @@
 // font mixin
 @use 'var' as * ;
+@use 'sass:color';
 
 @mixin basicfontsize {
     font-size: 16px;

@@ -5,6 +5,7 @@
 @use 'var';
 @use 'var.figma' as *;
 @use 'mixin' as *;
+@use 'sass:math';
 // @import 'var';
 
 
@@ -23,6 +24,17 @@
 @use 'page/index';
 @use 'page/about';
 @use 'page/product';
+
+
+
+.a {
+   width:  10em + 10em;
+   height:  20 - 30 + px;
+   margin:  10px * 10;
+   font : math.div(100 , 20) + px;//要記得引用@use 'sass:math';
+
+
+}
 
 
 
