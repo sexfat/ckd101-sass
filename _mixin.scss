@@ -1,0 +1,13 @@
+@mixin basicfontsize(){
+  font-size: 16px;
+  font-weight: 900;
+}
+
+
+a {
+  @include basicfontsize()
+}
+
+div {
+  @include basicfontsize()
+}

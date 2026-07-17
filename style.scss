@@ -1,125 +1,29 @@
 /*css 註解*/
 // sass 註解 
 
-@use 'var' as *;
+@use 'var';
+@use 'mixin';
+// @import 'var';
+
+
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: $fontSizeBasic;
-    color: $fontcolor;
-    background-color: rgb(156, 231, 224);
-}
-
-.btn {
-    background-color: map-get($btnColor, secondary);
-
+   font-size: var.$fontSizeBasic;
 }
 
 h1 {
-    font-size: $mainTitle;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: var.$fontSizeBasic * 5;
+}
+
+span {
+  font-size: var.$fontSizeBasic;
 }
 
 
-$w : null;
-
-.wrapper {
-    @if $w {
-        width: $w;
-        margin: $center;
-    }
-
-    @else {
-        width: 100%;
-    }
-}
-
-
-// span {
-//    color : #333; //可以給null值
-//    font-size: 20px;
-// }
-
-
-// 全域變數跟區域變數的設定
-$scope-a : 30px;
-
-.scope {
-    $scope-b : 20px !global; //提升為全域變數
-    font-size: $scope-b;
-}
-
-
-.scope-inner {
-    font-size: $scope-b;
-}
-
-
-//設定預設值
-$bgc : #e7ff7a; // 1
-$bgc : rgb(43, 255, 24) !default;
 
 
 
-.lane {
-    background-color: $bgc;
-}
-
-// #{ } 稱為 插值（Interpolation），可把 Sass 的值插入到選擇器、屬性名、字串中。
-
-$name : class;
-$link : img;
-$prop : margin;
 
 
 
-// 1) class 名稱
-.#{$name} {
-    width: 10px;
-}
 
-// 2) url 路徑
-.box {
-    background-image: url(./images/#{$link}.jpg);
-}
-
-// 3) 屬性名稱
-.attr {
-    #{$prop}: 10px;
-}
-
-
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-    nav {
-        ul {
-            list-style: none;
-            display: flex;
-            
-
-            li {
-                min-width: 150px;
-                padding: 20px 40px;
-                text-align: center;
-                margin: 0 10px;
-                background-color: aquamarine;
-                cursor: pointer;
-                transition: 0.3s all ease;
-                &:hover {
-                   background-color: #0099b4; 
-
-                }
-                &.active {
-                    background-color: #0099b4; 
-
-                }
-            }
-            
-        }
-    }
-
-}

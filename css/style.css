@@ -1,73 +1,25 @@
 @charset "UTF-8";
 /*css 註解*/
-body {
-  margin: 0;
-  padding: 0;
+a {
   font-size: 16px;
-  color: #333;
-  background-color: rgb(156, 231, 224);
+  font-weight: 900;
 }
 
-.btn {
-  background-color: yellow;
+div {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+body {
+  font-size: 16px;
 }
 
 h1 {
-  font-size: 40px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 80px;
 }
 
-.wrapper {
-  width: 100%;
-}
-
-.scope {
-  font-size: 20px;
-}
-
-.scope-inner {
-  font-size: 20px;
-}
-
-.lane {
-  background-color: #e7ff7a;
-}
-
-.class {
-  width: 10px;
-}
-
-.box {
-  background-image: url(./images/img.jpg);
-}
-
-.attr {
-  margin: 10px;
-}
-
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.header nav ul {
-  list-style: none;
-  display: flex;
-}
-.header nav ul li {
-  min-width: 150px;
-  padding: 20px 40px;
-  text-align: center;
-  margin: 0 10px;
-  background-color: aquamarine;
-  cursor: pointer;
-  transition: 0.3s all ease;
-}
-.header nav ul li:hover {
-  background-color: #0099b4;
-}
-.header nav ul li.active {
-  background-color: #0099b4;
+span {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
