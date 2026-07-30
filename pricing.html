@@ -7,12 +7,23 @@
     <title>三欄式價目表</title>
     <!-- Tailwind v4 瀏覽器版 -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-brand : #f20;
+        --color-logo: #ffc800;
+      }
+
+      .btn {
+        @apply border-1 border-gray-300 px-4 py-2 text-gray-500 rounded-md cursor-pointer;
+      }
+    </style>
+
 
 </head>
 
 <body class="bg-gray-100">
     <div class="wrapper w-[760px] mx-auto grid grid-cols-3 gap-6" >
-        <div class="item px-4 py-5 flex flex-col gap-8 border-1 border-gray-300 rounded-lg max-h-[340px]">
+        <div class="item px-4 py-5 relative flex flex-col gap-8 border-1 border-gray-300 rounded-lg h-fit  transition-all  hover:shadow-lg hover:top-1">
             <p class="free font-bold text-3xl">Free</p>
             <p class="text-6xl font-bold text-black">$0<span class="text-gray-500 text-sm">/月</span></p>
             <ul class="flex flex-col text-sm text-gray-500">
@@ -20,8 +31,12 @@
                 <li>&#8744; 基本功能</li>
                 <li>&#8744; 社群支援</li>
             </ul>
-            <button class="border-1 border-gray-300 px-4 py-2 text-gray-500 rounded-md cursor-point">開始使用</button>
+            <button class="btn">開始使用</button>
         </div>
+
+
+
+
         <div class="item px-4 py-5 flex flex-col justify-between gap-6 border-2 border-blue-500 rounded-lg min-h-[400px] shadow-xl">
             <p class="free font-bold text-3xl hidden">Free</p>
             <div class="flex flex-col gap-3">
@@ -34,7 +49,7 @@
                 <li>&#8744; 進階功能</li>
                 <li>&#8744; 優先支援</li>
             </ul>
-            <button class="border-1 bg-blue-500 px-4 py-2 text-white rounded-md cursor-point hover:bg-blue-700 transition-all">升級Pro</button>
+            <button class="border-1 bg-brand px-4 py-2 text-white rounded-md cursor-point hover:bg-blue-700 transition-all">升級Pro</button>
         </div>
         <div class="item px-4 py-5 flex flex-col gap-8 border-1 border-gray-300 rounded-lg max-h-[340px]">
             <p class="free font-bold text-3xl">Team</p>
@@ -44,7 +59,7 @@
                 <li>&#8744; 全部功能</li>
                 <li>&#8744; 專屬客服</li>
             </ul>
-            <button class="border-1 border-gray-300 px-4 py-2 text-gray-500 rounded-md">聯絡我們</button>
+            <button class="btn">聯絡我們</button>
         </div>
 
 
