@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind v4 瀏覽器版 -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        .btn {
+          @apply bg-amber-300 text-center p-4 rounded-lg text-white
+        }
+
+    </style>
+    <title>tailwind</title>
+</head>
+
+<body class="bg-gray-100 p-4">
+     <div class="wrapper bg-white w-full mx-auto p-2">
+        <h1 class="text-center">tailwind 練習</h1>
+        <section class="p-6 text-center rounded-lg mt-4 shadow-md">
+            <p class="text-xl font-bold text-lime-500">text area</p> 
+        </section>
+       
+        <section class="p-6 mt-4">
+          <h1 class="mb-6"> 色階練習</h1> 
+          <div class="p-4  bg-blue-100 inline rounded-lg">bule-100</div>
+          <div class="p-4  bg-blue-200 inline rounded-lg">bule-200</div>
+          <div class="p-4  bg-blue-300 inline rounded-lg">bule-300</div>
+          <div class="p-4  bg-blue-400 inline rounded-lg">bule-400</div>
+          <div class="p-4  bg-blue-500 inline rounded-lg">bule-500</div>
+          <div class="p-4  bg-blue-600 inline rounded-lg">bule-600</div>
+        </section>
+        <section class="p-6 rounded-lg bg-white">
+            <h1 class="mb-6"> 卡片練習</h1>
+            <div class="card p-6 w-1/2 mx-auto rounded-lg shadow-lg text-center">
+                 <h3 class="font-bold text-3xl text-gray-700">王曉明</h3>
+                 <p class="text-sm text-gray-500 mt-1">前端工程師</p>
+                 <button class="px-4 py-2 bg-blue-600 text-white rounded-md text-center mt-5 cursor-pointer hover:bg-blue-800">聯絡我</button>
+            </div> 
+        </section>
+        <h1 class="mb-1 mt-4">flex排版練習</h1>
+        <section class="p-6 flex gap-4 flex-wrap"> 
+           <div class="item p-6 bg-gray-50 rounded-lg flex-1">001</div>
+           <div class="item p-6 bg-gray-50 rounded-lg flex-2">002</div>
+           <div class="item p-6 bg-gray-50 rounded-lg flex-1">003</div>
+        </section>
+
+       <div class="btn">按鈕</div>
+     </div>
+</body>
+
+</html>
